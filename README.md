@@ -19,6 +19,16 @@ Firefox Crash Graphs is a daily (weekdays) report of crash analysis on a represe
 
 For this project, data was analyzed in [Spark](http://spark.apache.org/) ([PySpark](https://spark.apache.org/docs/0.9.0/python-programming-guide.html) and [SparkSQL](http://spark.apache.org/sql/)) using [Jupyter Notebook](http://jupyter.org/) on a 16-node [AWS](https://aws.amazon.com/) cluster. The graphs were made using the [metrics-graphics](https://www.metricsgraphicsjs.org/) javascript library.
 
+## [Wiki-Walk](https://github.com/nplevitt/Wiki-Walk)
+
+This is a Python project I worked on for my Data Acquisition course at [USFCA](https://www.usfca.edu/arts-sciences/graduate-programs/analytics) with three other students. The final output is a [Flask](http://flask.pocoo.org/) app that runs locally (although it is easily deployable on a server as well).
+
+This project displays the degrees of separation between topics on Wikipedia. This interactive program allows users to visually see the shortest path between two topics. Users can select a start and end term from a dropdown menu, and the program will take them on the shortest journey between these topics through an automated process that clicks on the relevant Wikipedia links.
+
+Due to data storage limits and potentially long run-times, the program was implemented on a fully connected subset of articles, rather than all of Wikipedia. However, given more resources, the program can be easily scaled up to get the degrees of separation between any two topics on Wikipedia.
+
+Alongside Flask, we used [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to parse the HTML pages from Wikipedia (obtained through GET requests) and [Selenium](http://www.seleniumhq.org/) to create the visual journey that guides the user through the shortest path between two articles.
+
 ## [DAU Calendar](https://aguimaraesduarte.github.io/DAU_Calendar/)
 
 This is a simple [Bokeh](http://bokeh.pydata.org/en/latest/) Python app I created as a proof of concept. DAU stands for Daily Active Users, i.e., how many distinct users are active on your product on a given day. This metrics is widely used throughout companies, and is usually visualized as a time series. This is just another visualization, where a calendar is built with that information and shows DAU (and any other useful information) when the user hovers on any date. In this example, I also colored weekends and holidays to show some possibilities.
