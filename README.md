@@ -34,4 +34,4 @@ This is a simple [Bokeh](http://bokeh.pydata.org/en/latest/) Python app I create
 Another fun idea that could be built on top of this current version is to have the size of the day (either the number or the entire square block) increase or decrease according to the DAU, so days that saw more users active would immediately stand out from within the calendar.
 
 # Contact info
-You can contact me via [email](mailto:aduarte@mozilla.com?Subject=Contacting%20from%20your%github%page).
+You can contact me via [email](mailto:aduarte@mozilla.com?Subject=Contacting%20from%20your%github%page) or find me on [LinkedIn](https://www.linkedin.com/in/aguimaraesduarte/).
